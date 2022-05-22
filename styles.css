@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+:root{
+    /* Primary */
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    
+    /* Neutral */
+    --Very-dark-blue-main-bg: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-bg: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+}
+body{
+    background-color: var(--Very-dark-blue-main-bg);
+    min-width: 340px;
+}
+main{
+    background-color: var(--Very-dark-blue-card-bg);
+    padding: 20px;
+}
+#main-img, 
+main, 
+.overlay{ border-radius: 15px; }
+.blue-text{ color: var(--Soft-blue); }
+.white-text{ color: white; }
+#quantity{ color: var(--Cyan); }
+#main-para{
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    max-width: 300px;
+}
+#days,
+#quantity{ gap: 8px; }
+#creator{
+    gap: 15px;
+    border-top: 1px solid var(--Very-dark-blue-line);
+}
+.white-text:hover{
+    cursor: pointer;
+    color: var(--Cyan);
+}
+.overlay{
+    background-color: hsla(178, 100%, 50%, 0.4);
+    display: none;
+}
+.img:hover .overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
